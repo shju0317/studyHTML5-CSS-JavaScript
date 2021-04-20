@@ -32,29 +32,27 @@
 }
 #footer {
   height: 200px;
-  background: #333;
+  background: #03588c;
 }
 
 /* 컨텐츠 레이아웃 */
 #cont_nav {
   width: 100%;
-  height: 200px;
-  background: #444;
+  height: 250px;
+  background: #0e5079;
 }
 #cont_tit {
   width: 100%;
   height: 200px;
-  background: #555;
+  background: #02385a;
 }
 #cont_ban {
-  width: 100%;
-  height: 200px;
-  background: #777;
+  background: #02385a;
 }
 #cont_cont {
   width: 100%;
   height: 200px;
-  background: #666;
+  background: #02385a;
 }
 
 /* 컨테이너 */
@@ -62,7 +60,6 @@
   width: 990px;
   margin: 0 auto;
   height: inherit;
-  background: rgba(255, 255, 255, 0.3);
 }
 
 /* 헤더 */
@@ -156,10 +153,10 @@
   width: 40%;
 }
 .nav > div:last-child {
-  width: 20%; /* ie9부터 사용 가능 */
-}
+  width: 20%;
+} /* ie9부터 사용 가능 */
 .nav > div.last {
-  width: 20%; /* ie8 이하*/
+  width: 20%;
 }
 .nav > div h3 {
   font-size: 18px;
@@ -168,11 +165,97 @@
 }
 .nav > div ol {
   overflow: hidden;
+}
+.nav > div ol li {
+  float: left;
   width: 50%;
 }
 .nav > div.last ol li {
   width: 100%;
 }
-.nav > div.last ol li a:hover {
+
+.nav > div ol li a {
+  color: #fff;
+}
+.nav > div ol li a:hover {
   text-decoration: underline;
+}
+
+/* 타이틀 */
+.tit {
+  position: relative;
+}
+.tit h2 {
+  font-size: 28px;
+  text-align: center;
+  padding: 5px 0;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.tit .btn {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../images/icon.png) no-repeat 0 -600px;
+}
+
+/* 배너 */
+.ban {
+  position: relative;
+  padding: 24px 0 20px;
+}
+.ban a.prev {
+  position: absolute;
+  left: -60px;
+  top: 60px;
+  width: 43px;
+  height: 43px;
+  background: url(../images/icon.png) no-repeat -150px 0;
+}
+.ban a.prev:hover {
+  background: url(../images/icon.png) no-repeat -193px 0;
+}
+.ban a.next {
+  position: absolute;
+  right: -60px;
+  top: 60px;
+  width: 43px;
+  height: 43px;
+  background: url(../images/icon.png) no-repeat -193px -43px;
+}
+.ban a.next:hover {
+}
+.ban ul {
+  overflow: hidden;
+}
+.ban ul li {
+  float: left;
+  width: 330px;
+}
+.ban ul li:nth-child(2) {
+  /* ie9부터 적용*/
+  text-align: center;
+}
+.ban ul li:last-child {
+  /* ie9부터 적용*/
+  text-align: right;
+}
+.ban ul li.ban_img1 {
+  text-align: left;
+}
+.ban ul li.ban_img2 {
+  text-align: center;
+}
+.ban ul li.ban_img3 {
+  text-align: right;
+}
+.ban ul li img {
+  border: 4px solid #fff;
+}
+.ban ul li img:hover {
+  border-color: #25a2d0;
 }
