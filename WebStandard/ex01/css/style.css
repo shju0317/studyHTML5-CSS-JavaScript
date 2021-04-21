@@ -936,3 +936,29 @@
 .footer .w3c {
   margin-top: 15px;
 }
+
+/* 레이어 팝업 */
+#layer {
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  width: 700px;
+  border: 10px solid #ccc;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  display: none;
+}
+#layer img {
+  width: 100%;
+  display: block;
+}
+#layer .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #0093bc;
+  padding: 1px 6px;
+  color: #fff;
+}
+#layer .close:hover {
+  text-decoration: underline;
+}

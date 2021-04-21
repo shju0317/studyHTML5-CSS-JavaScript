@@ -393,7 +393,7 @@
                 <div class="popup">
                   <h4>Advertisement</h4>
                   <ul>
-                    <li>
+                    <li class="layer">
                       <a href="#"
                         ><img src="images/sban07.jpg" alt="이미지1"
                       /></a>
@@ -413,6 +413,7 @@
                 <!-- //팝업 -->
               </div>
               <!-- // col3 -->
+
               <div class="column col4">
                 <h3>
                   <span class="ico_img ir_pm">아이콘</span
@@ -722,10 +723,32 @@
     </div>
     <!-- //wrap -->
 
+    <!-- layer popup -->
+    <div id="layer">
+      <img src="images/webstandard1.jpg" alt="웹표준 사이트" />
+      <a href="#" class="close">close</a>
+    </div>
+
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script type="text/javascript">
+      //layer popup
+      $(".layer").click(function (e) {
+        e.preventDefault();
+        //$("#layer").css("display","block");
+        //$("#layer").show();
+        //$("#layer").fadeIn();
+        $("#layer").slideDown();
+      });
+      $("#layer .close").click(function (e) {
+        e.preventDefault();
+        //$("#layer").css("display","none");
+        //$("#layer").hide();
+        //$("#layer").fadeOut();
+        $("#layer").slideUp();
+      });
+
       //tab
       var $tab_list = $(".tab_menu");
 
