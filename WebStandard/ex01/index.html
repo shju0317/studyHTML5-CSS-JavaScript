@@ -11,8 +11,10 @@
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
 
     <!-- web font -->
+    <script src="js/slick.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap"
@@ -138,46 +140,64 @@
             </div>
           </div>
         </div>
+        <!-- //cont_nav -->
+
         <div id="cont_tit">
           <div class="container">
             <div class="tit">
-              <h2>publish and develop</h2>
+              <h2>Publish and Develop</h2>
               <a href="#" class="btn"><span class="ir_pm">전체메뉴</span></a>
             </div>
           </div>
         </div>
+        <!-- //con_tit -->
+
         <div id="cont_ban">
           <div class="container">
             <div class="ban">
-              <a href="#" class="prev"
-                ><span class="ir_pm">이전 이미지</span></a
-              >
-              <ul>
-                <li class="ban_img1">
-                  <a href="#"
-                    ><img
-                      src="images/banner_link1.jpg"
-                      alt="웹 표준 지침서 보기"
-                  /></a>
-                </li>
-                <li class="ban_img2">
-                  <a href="#"
-                    ><img src="images/banner_link2.jpg" alt="CSS 버튼 만들기"
-                  /></a>
-                </li>
-                <li class="ban_img3">
-                  <a href="#"
-                    ><img src="images/banner_link3.jpg" alt="로그인 폼 만들기"
-                  /></a>
-                </li>
-              </ul>
-              <a href="#" class="next"
-                ><span class="ir_pm">다음 이미지</span></a
-              >
+              <!--                       
+                    <a href="#" class="prev"><span class="ir_pm">이전 이미지</span></a>
+                    <ul>
+                        <li class="ban_img1"><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></li>
+                        <li class="ban_img2"><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></li>
+                        <li class="ban_img3"><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></li>
+                    </ul>
+                    <a href="#" class="next"><span class="ir_pm">다음 이미지</span></a> 
+-->
+
+              <div>
+                <a href="#"
+                  ><img src="images/banner_link1.jpg" alt="웹 표준 지침서 보기"
+                /></a>
+              </div>
+              <div>
+                <a href="#"
+                  ><img src="images/banner_link2.jpg" alt="CSS 버튼 만들기"
+                /></a>
+              </div>
+              <div>
+                <a href="#"
+                  ><img src="images/banner_link3.jpg" alt="로그인 폼 만들기"
+                /></a>
+              </div>
+              <div>
+                <a href="#"
+                  ><img src="images/banner_link1.jpg" alt="웹 표준 지침서 보기"
+                /></a>
+              </div>
+              <div>
+                <a href="#"
+                  ><img src="images/banner_link2.jpg" alt="CSS 버튼 만들기"
+                /></a>
+              </div>
+              <div>
+                <a href="#"
+                  ><img src="images/banner_link3.jpg" alt="로그인 폼 만들기"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
-        <!-- //coont_ban-->
 
         <div id="cont_cont">
           <div class="container">
@@ -568,6 +588,7 @@
                 <div class="gallery">
                   <h4>Portfolio</h4>
                   <div class="gallery_btn">
+                    <!--
                     <ul>
                       <li class="gb_icon1">
                         <a href="#"><span class="ir_pm">시작</span></a>
@@ -582,8 +603,22 @@
                         <a href="#"><span class="ir_pm">다음이미지</span></a>
                       </li>
                     </ul>
+                -->
+                    <button class="gb_icon1 play">
+                      <span class="ir_pm">시작</span>
+                    </button>
+                    <button class="gb_icon2 pause">
+                      <span class="ir_pm">정지</span>
+                    </button>
+                    <button class="gb_icon3 prev">
+                      <span class="ir_pm">이전이미지</span>
+                    </button>
+                    <button class="gb_icon4 next">
+                      <span class="ir_pm">다음이미지</span>
+                    </button>
                   </div>
                   <div class="gallery_img">
+                    <!--
                     <ul>
                       <li>
                         <a href="#"
@@ -611,6 +646,32 @@
                         /></a>
                       </li>
                     </ul>
+                -->
+                    <div>
+                      <a href="#"
+                        ><img src="images/gallery01.jpg" alt="갤러리1"
+                      /></a>
+                    </div>
+                    <div>
+                      <a href="#"
+                        ><img src="images/gallery02.jpg" alt="갤러리2"
+                      /></a>
+                    </div>
+                    <div>
+                      <a href="#"
+                        ><img src="images/gallery03.jpg" alt="갤러리3"
+                      /></a>
+                    </div>
+                    <div>
+                      <a href="#"
+                        ><img src="images/gallery04.jpg" alt="갤러리4"
+                      /></a>
+                    </div>
+                    <div>
+                      <a href="#"
+                        ><img src="images/gallery05.jpg" alt="갤러리5"
+                      /></a>
+                    </div>
                   </div>
                 </div>
                 <!-- //gallery -->
@@ -660,5 +721,78 @@
       <!-- //footer -->
     </div>
     <!-- //wrap -->
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script type="text/javascript">
+      //tab
+      var $tab_list = $(".tab_menu");
+
+      $tab_list.find("ul ul").hide();
+      $tab_list.find("li.active > ul").show();
+
+      function tabMenu(e) {
+        e.preventDefault();
+        var $this = $(this);
+        $this
+          .next("ul")
+          .show()
+          .parent("li")
+          .addClass("active")
+          .siblings("li")
+          .removeClass("active")
+          .find(">ul")
+          .hide();
+      }
+      $tab_list.find("ul>li>a").click(tabMenu).focus(tabMenu);
+
+      //banner
+      $(".ban").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+      });
+
+      // gallery
+      $(".gallery_img").slick({
+        fade: true,
+        pauseOnHover: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 300,
+        slidesToShow: 1,
+      });
+      $(".play").click(function () {
+        $(".gallery_img").slick("slickPlay");
+      });
+      $(".pause").click(function () {
+        $(".gallery_img").slick("slickPause");
+      });
+      $(".prev").click(function () {
+        $(".gallery_img").slick("slickPrev");
+      });
+      $(".next").click(function () {
+        $(".gallery_img").slick("slickNext");
+      });
+
+      //버튼 클릭시 전체메뉴 보이기
+      $(".tit .btn").click(function (e) {
+        e.preventDefault();
+        //$("#cont_nav").css("display","block");
+        //$("#cont_nav").show();
+        //$("#cont_nav").fadeIn();
+        //$("#cont_nav").slideDown();
+        //$("#cont_nav").toggle();
+        //$("#cont_nav").fadeToggle();
+        $("#cont_nav").slideToggle(200);
+        $(this).toggleClass("on");
+      });
+    </script>
   </body>
 </html>
